@@ -13,7 +13,7 @@
 
 普通模式：数据集读取支持文件（pt，mat，csv，hcf5格式）/文件夹路径。
 
-![普通模式界面](path/to/your/image1.png)
+![image](https://github.com/JiLiangBOKI/DL_alchemy/assets/142667410/216776c5-58cf-4a5c-a373-d0f520a915c6)
 
 参数修改支持命令行参数，数值型配置以及字典参数。
 
