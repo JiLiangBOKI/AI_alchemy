@@ -156,11 +156,14 @@ class ArgParseGUI(QWidget):
                 input_text = self.input_fields[arg['name']].text()
                 new_text = re.sub(r'\d+', str(self.counter), input_text)
                 self.input_fields[arg['name']].setText(new_text)
-                arg['default'] = new_text
+            else:
+                new_text = self.input_fields[arg['name']].text()
+            arg['default'] = new_text
         self.update_file()
         if not self.zen_mode:  # Only show message box if not in zen mode
             QMessageBox.information(self, '信息', '参数更新成功!')
         self.counter += 1  # Increase counter
+
 
     def update_file(self):
         with open(self.file_path, 'r', encoding='utf-8') as file:
